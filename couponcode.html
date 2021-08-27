@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Title of the document</title>
+  <link rel="stylesheet" type="text/css" href="couponcode.css">
+  <script src="couponcode.js"></script>
+</head>
+<body>
+  <div class="openBtn">
+    <button class="openButton" onclick="openForm()"><strong>Open Form</strong></button>
+  </div>
+  <div class="loginPopup" >
+    <div class="formPopup" id="popupForm2">
+      <form  class="formContainer" >
+        <div class="top" >
+          <div class="right" ><button type="button"  class="btn cancel" onclick="closeForm()"><legend>x</legend></button></div>
+        </div>
+        <div class="coupon">
+          <div class="container">
+            <h3>20% OFF YOUR PURCHASE</h3>
+          </div>
+          <div class="container" style="background-color:white">
+            <div class="tileContainer">
+              <div class="tileComponent1">
+                <img src="icedcoffee.jpg" alt="icedcoffee"/>
+              </div>
+              <div class="tileComponent2">
+                <div class="componentHeading">
+                  Iced Coffee
+                </div>
+                <div class="componentSubHeading">
+                  A cool,nutritious drink for the warm summer months.
+                </div>⭐⭐⭐⭐⭐
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <p>Use Promo Code: <input type="number" id="id1" placeholder="CouponCode" name="psw" 
+            required></p>
+            <button type="submit" class="btn1"  id="btnSubmit" onclick="myFunction()">Log in</button>
+            <p class="expire">Expires: AUG 30, 2021</p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script> window.onload=fillId()</script>
+</body>
+</html>
